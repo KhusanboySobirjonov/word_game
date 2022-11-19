@@ -12,7 +12,7 @@ import random as r
 def get_word():
     """So'zlarni random qilib beradigan funksiya"""
     word = r.choice(words)
-    if "'" in word or "-" in word:
+    if "‘" in word or "-" in word:
         word = r.choice(words)
     return word
 
