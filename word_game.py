@@ -34,7 +34,7 @@ def display(letters = None, word = None):
     for i in user_words:
         user_letters += i
     if letters == None:
-        print(f"\nMen {len(word)} belgili so'z o'yladim. Topa olasizmi ?\n{user_letters}")
+        print(f"\nMen {len(word)} belgili so'z o'yladim. ( " ' " va " - " belgilari ham bo'lishi mumkin) Topa olasizmi ?\n{user_letters}")
     return user_letters
 
 
