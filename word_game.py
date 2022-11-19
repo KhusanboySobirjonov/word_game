@@ -12,6 +12,8 @@ import random as r
 def get_word():
     """So'zlarni random qilib beradigan funksiya"""
     word = r.choice(words)
+    if "'" in word or "-" in word:
+        word = r.choice(words)
     return word
 
 
@@ -34,7 +36,7 @@ def display(letters = None, word = None):
     for i in user_words:
         user_letters += i
     if letters == None:
-        print(f"\nMen {len(word)} belgili so'z o'yladim. ( " ' " va " - " belgilari ham bo'lishi mumkin) Topa olasizmi ?\n{user_letters}")
+        print(f"\nMen {len(word)} belgili so'z o'yladim. ( \" ' \" va \" - \" belgilari ham bo'lishi mumkin) Topa olasizmi ?\n{user_letters}")
     return user_letters
 
 
